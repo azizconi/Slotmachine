@@ -1,15 +1,12 @@
 package com.example.slotmachine
 
-import android.content.pm.ActivityInfo
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.slotmachine.repository.Event
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity(), Event {
 
@@ -21,7 +18,6 @@ class MainActivity : AppCompatActivity(), Event {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
 
         image.setEvent(this@MainActivity)
